@@ -1,9 +1,109 @@
-const router = require('express').Router();
+const router = require("express").Router();
 
-router.get('/', (req, res) => {
-  return res.json({
-    message: "hello world!",
-  });
+const {
+  env
+} = process;
+const {
+  StarCraft2API
+} = require("../../../../StarCraft2-API");
+
+/** Regions */
+
+router.get("/queryStaticProfileData/:region", async (req, res) => {
+  try {
+    const {
+      region,
+    } = req.params;
+    const {
+      locale,
+    } = req.query;
+    const clientId = env.API_BATTLENET_KEY;
+    const clientSecret = env.API_BATTLENET_SECRET;
+    const Sc2API = new StarCraft2API(region, clientId, clientSecret);
+    const response = await Sc2API.queryStaticProfileData(region, locale);
+    // console.log(response);
+    res.json(response);
+  } catch (error) {
+    console.log(error);
+    res.send(error);
+  }
 });
+
+// router.get("/querySearch/:region", async (req, res) => {
+//   try {
+//     const {
+//       region
+//     } = req.params;
+//     const {
+//       endpoint,
+//       accessToken,
+//       selector
+//     } = req.query;
+//     const clientId = env.API_BATTLENET_KEY;
+//     const clientSecret = env.API_BATTLENET_SECRET;
+//     const BnetApi = new BattleNetApi(
+//       region,
+//       clientId,
+//       clientSecret,
+//       accessToken
+//     );
+//     const response = await BnetApi.querySearch(endpoint, selector);
+//     res.json(response);
+//   } catch (error) {
+//     res.send(error);
+//   }
+// });
+
+// router.get("/queryBatch", async (req, res) => {
+//   try {
+//     const region = "us";
+//     const endpoints = ["/sc2/profile/1/1/1465407", "/sc2/profile/1/2/242838"];
+//     const clientId = env.API_BATTLENET_KEY;
+//     const clientSecret = env.API_BATTLENET_SECRET;
+//     const BnetApi = new BlizzAPI(region, clientId, clientSecret);
+//     const response = await BnetApi.queryBatch(endpoints);
+//     res.json(response);
+//   } catch (error) {
+//     console.log(error);
+//     res.send(error);
+//   }
+// });
+
+// router.get("/querySearchBatch", async (req, res) => {
+//   try {
+//     const region = "us";
+//     const endpointsWithSelectors = [{
+//         endpoint: "/sc2/profile/1/1/1465407",
+//         selector: "snapshot"
+//       },
+//       {
+//         endpoint: "/sc2/profile/2/1/5593296",
+//         selector: "snapshot"
+//       }
+//     ];
+//     const clientId = env.API_BATTLENET_KEY;
+//     const clientSecret = env.API_BATTLENET_SECRET;
+//     const BnetApi = new BlizzApi(region, clientId, clientSecret);
+//     const response = await BnetApi.querySearchBatch(endpointsWithSelectors);
+//     res.json(response);
+//   } catch (error) {
+//     res.send(error);
+//   }
+// });
+
+// router.get('/check_token', async (req, res) => {
+//   try {
+//     // const clientId = env.API_BATTLENET_KEY;
+//     // const clientSecret = env.API_BATTLENET_SECRET;
+//     // const BnetApi = new BattleNetApi('us', clientId, clientSecret);
+//     const accessToken = '';
+//     const response = await BlizzAPI.validateAccessToken('us', accessToken);
+//     // console.log(response);
+//     res.json(response);
+//   } catch (error) {
+//     // console.log(error);
+//     res.send(error);
+//   }
+// });
 
 module.exports = router;
