@@ -10,8 +10,6 @@ const {
 const clientId = env.API_BATTLENET_KEY;
 const clientSecret = env.API_BATTLENET_SECRET;
 
-/** Regions */
-
 router.get("/queryStaticProfileData/:regionId", async (req, res) => {
   try {
     const {
