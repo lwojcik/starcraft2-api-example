@@ -152,4 +152,95 @@ router.get("/queryPlayerAccount/:accountId", async (req, res) => {
   }
 });
 
+router.get("/queryLegacyProfile/:regionId/:realmId/:profileId", async (req, res) => {
+  try {
+    const {
+      regionId,
+      realmId,
+      profileId,
+    } = req.params;
+
+    const Sc2API = new StarCraft2API(regionId, clientId, clientSecret);
+    const response = await Sc2API.queryLegacyProfile(regionId, realmId, profileId);
+    res.json(response);
+  } catch (error) {
+    throw error;
+  }
+});
+
+router.get("/queryLegacyLadders/:regionId/:realmId/:profileId", async (req, res) => {
+  try {
+    const {
+      regionId,
+      realmId,
+      profileId,
+    } = req.params;
+
+    const Sc2API = new StarCraft2API(regionId, clientId, clientSecret);
+    const response = await Sc2API.queryLegacyLadders(regionId, realmId, profileId);
+    res.json(response);
+  } catch (error) {
+    throw error;
+  }
+});
+
+router.get("/queryLegacyMatchHistory/:regionId/:realmId/:profileId", async (req, res) => {
+  try {
+    const {
+      regionId,
+      realmId,
+      profileId,
+    } = req.params;
+
+    const Sc2API = new StarCraft2API(regionId, clientId, clientSecret);
+    const response = await Sc2API.queryLegacyMatchHistory(regionId, realmId, profileId);
+    res.json(response);
+  } catch (error) {
+    throw error;
+  }
+});
+
+router.get("/queryLegacyLadder/:regionId/:ladderId", async (req, res) => {
+  try {
+    const {
+      regionId,
+      ladderId,
+    } = req.params;
+
+    const Sc2API = new StarCraft2API(regionId, clientId, clientSecret);
+    const response = await Sc2API.queryLegacyLadder(regionId, ladderId);
+    res.json(response);
+  } catch (error) {
+    throw error;
+  }
+});
+
+router.get("/queryLegacyAchievements/:regionId", async (req, res) => {
+  try {
+    const {
+      regionId,
+    } = req.params;
+
+    const Sc2API = new StarCraft2API(regionId, clientId, clientSecret);
+    const response = await Sc2API.queryLegacyAchievements(regionId);
+    res.json(response);
+  } catch (error) {
+    throw error;
+  }
+});
+
+router.get("/queryLegacyRewards/:regionId", async (req, res) => {
+  try {
+    const {
+      regionId,
+    } = req.params;
+
+    const Sc2API = new StarCraft2API(regionId, clientId, clientSecret);
+    const response = await Sc2API.queryLegacyRewards(regionId);
+    res.json(response);
+  } catch (error) {
+    throw error;
+  }
+});
+
 module.exports = router;
