@@ -16,5 +16,5 @@ node_js:
   - "lts/*"
   - "node"
 
-install:
+script:
   - npm install
