@@ -106,7 +106,7 @@ Returns data for the specified season, queue, team, and league.
 
 ## License
 
-Licensed under MIT License. See [LICENSE](https://github.com/lukemnet/blizzapi-example/blob/master/LICENSE) for more information.
+Licensed under MIT License. See [LICENSE](https://github.com/lukemnet/starcraft2-api-example/blob/master/LICENSE) for more information.
 
 ## Legal
 
