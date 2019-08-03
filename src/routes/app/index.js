@@ -157,7 +157,7 @@ router.get("/queryLegacyAchievements/:regionId", async (req, res) => {
 
 router.get("/queryLegacyRewards/:regionId", async (req, res) => {
   try {
-    const { reregionId } = req.params;
+    const { regionId } = req.params;
     const Sc2API = new StarCraft2API({ region: regionId, clientId, clientSecret });
     const response = await Sc2API.queryLegacyRewards(regionId);
     res.json(response);
