@@ -6,6 +6,12 @@ const { env } = process;
 const clientId = env.API_BATTLENET_KEY;
 const clientSecret = env.API_BATTLENET_SECRET;
 
+router.get('/', (req, res) => {
+  return res.json({
+    message: "hello world!",
+  });
+});
+
 router.get("/queryStaticProfileData/:regionId", async (req, res) => {
   try {
     const { regionId } = req.params;
