@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/ should match snapshot 1`] = `
+Object {
+  "message": "hello world!",
+}
+`;
+
+exports[`/queryGrandmasterLeaderboard/1 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryGrandmasterLeaderboard",
+}
+`;
+
+exports[`/queryLadderSummary/1/1/123456 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryLadderSummary",
+}
+`;
+
+exports[`/queryLegacyAchievements/1 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryLegacyAchievements",
+}
+`;
+
+exports[`/queryLegacyLadder/1/234567 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryLegacyLadder",
+}
+`;
+
+exports[`/queryLegacyLadders/1/1/123456 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryLegacyLadders",
+}
+`;
+
+exports[`/queryLegacyMatchHistory/1/1/123456 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryLegacyMatchHistory",
+}
+`;
+
+exports[`/queryLegacyProfile/1/1/123456 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryLegacyProfile",
+}
+`;
+
+exports[`/queryLegacyRewards/1 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryLegacyRewards",
+}
+`;
+
+exports[`/queryPlayerAccount/1/123 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryPlayerAccount",
+}
+`;
+
+exports[`/queryPlayerLadder/1/1/123456/234567 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryPlayerLadder",
+}
+`;
+
+exports[`/queryProfile/1/1/123456 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryProfile",
+}
+`;
+
+exports[`/queryProfileMetadata/1/1/123456 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryProfileMetadata",
+}
+`;
+
+exports[`/querySeason/1 should match snapshot 1`] = `
+Object {
+  "data": "sample data for querySeason",
+}
+`;
+
+exports[`/queryStaticProfileData/1 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryStaticProfileData",
+}
+`;
