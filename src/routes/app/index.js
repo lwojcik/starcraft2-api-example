@@ -108,4 +108,11 @@ router.get("/queryLegacyRewards/:regionId", async (req, res) => {
   res.json(response);
 });
 
+router.get("/queryLeagueData/:regionId/:seasonId/:queueId/:teamType/:leagueId", async (req, res) => {
+  const { regionId, seasonId, queueId, teamType, leagueId } = req.params;
+  const Sc2API = new StarCraft2API({ region: regionId, clientId, clientSecret });
+  const response = await Sc2API.queryLeagueData({ seasonId, queueId, teamType, leagueId });
+  res.json(response);
+});
+
 module.exports = router;

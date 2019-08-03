@@ -6,6 +6,10 @@ const realmId = '1';
 const profileId = '123456';
 const ladderId = '234567';
 const accountId = '123';
+const seasonId = '37';
+const queueId = '201';
+const teamType = '0';
+const leagueId = '6';
 
 jest.mock('starcraft2-api', () => jest.fn().mockImplementation(() => ({
   queryStaticProfileData: () => Promise.resolve({
@@ -50,6 +54,9 @@ jest.mock('starcraft2-api', () => jest.fn().mockImplementation(() => ({
   queryLegacyRewards: () => Promise.resolve({
     data: 'sample data for queryLegacyRewards',
   }),
+  queryLeagueData: () => Promise.resolve({
+    data: 'sample data for queryLeagueData',
+  }),
 })));
 
 const routes = [
@@ -68,6 +75,7 @@ const routes = [
   `/queryLegacyLadder/${regionId}/${ladderId}`,
   `/queryLegacyAchievements/${regionId}`,
   `/queryLegacyRewards/${regionId}`,
+  `/queryLeagueData/${regionId}/${seasonId}/${queueId}/${teamType}/${leagueId}`
 ];
 
 routes.map(route => {

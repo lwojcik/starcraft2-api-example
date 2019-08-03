@@ -18,6 +18,12 @@ Object {
 }
 `;
 
+exports[`/queryLeagueData/1/37/201/0/6 should match snapshot 1`] = `
+Object {
+  "data": "sample data for queryLeagueData",
+}
+`;
+
 exports[`/queryLegacyAchievements/1 should match snapshot 1`] = `
 Object {
   "data": "sample data for queryLegacyAchievements",
