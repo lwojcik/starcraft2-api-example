@@ -100,7 +100,7 @@ Returns data about the achievements available in SC2.
 
 Returns data about the rewards available in SC2.
 
-### ``GET /queryLeagueData/:regionId``
+### ``GET /queryLeagueData/:regionId/:seasonId/:queueId/:teamType/:leagueId``
 
 Returns data for the specified season, queue, team, and league.
 
