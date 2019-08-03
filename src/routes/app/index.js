@@ -1,10 +1,8 @@
 const router = require("express").Router();
 const StarCraft2API = require("starcraft2-api");
 
-const { env } = process;
-
-const clientId = env.API_BATTLENET_KEY;
-const clientSecret = env.API_BATTLENET_SECRET;
+const clientId = process.env.API_BATTLENET_KEY;
+const clientSecret = process.env.API_BATTLENET_SECRET;
 
 router.get('/', (req, res) => {
   return res.json({
