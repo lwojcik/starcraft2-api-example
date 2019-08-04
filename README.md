@@ -3,6 +3,7 @@
 [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/quvaodb0jkqkvkxf/branch/master?svg=true)](https://ci.appveyor.com/project/lwojcik/starcraft2-api-example/branch/master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/790916641cb9f64e9d60/maintainability)](https://codeclimate.com/github/lukemnet/starcraft2-api-example/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/790916641cb9f64e9d60/test_coverage)](https://codeclimate.com/github/lukemnet/starcraft2-api-example/test_coverage)
+[![Greenkeeper badge](https://badges.greenkeeper.io/lukemnet/starcraft2-api-example.svg)](https://greenkeeper.io/)
 
 Sample REST API based on Express.js demonstrating [StarCraft2-API](https://github.com/lukemnet/starcraft2-api) features.
 
