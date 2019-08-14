@@ -11,6 +11,8 @@ Sample REST API based on Express.js demonstrating [StarCraft2-API](https://githu
 
 Note that this project is for illustrative purposes only. It is not designed to run as a production server.
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Install
 
 ```bash
