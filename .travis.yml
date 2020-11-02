@@ -3,18 +3,14 @@ env:
     - CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID
 
 language: node_js
-
+os: linux
 dist: bionic
-
-os:
-  - linux
-  - osx
-  - windows
 
 node_js:
   - '10'
   - '12'
   - '14'
+  - '15'
 
 notifications:
   email:
@@ -32,8 +28,8 @@ before_script:
   - if [[ "$TRAVIS_OS_NAME" != "windows" ]]; then ./cc-test-reporter before-build; fi
 
 script:
-  - npm test
+  - npm run build
   - codecov
 
 after_script:
-  - if [[ "$TRAVIS_OS_NAME" != "windows" ]]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
+  - if [[ "$TRAVIS_OS_NAME" != "linux" ]]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
