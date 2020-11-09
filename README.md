@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/lukemnet/starcraft2-api-docs/master/docs/.vuepress/public/logo.png" alt="StarCraft2-API logo" width="200" height="200">
 
 # starcraft2-api-example
-[![Travis CI Build Status](https://travis-ci.org/lukemnet/starcraft2-api-example.svg?branch=master)](https://travis-ci.org/lukemnet/starcraft2-api-example)
+[![Travis CI Build Status](https://travis-ci.com/lukemnet/starcraft2-api-example.svg?branch=master)](https://travis-ci.com/lukemnet/starcraft2-api-example)
 [![Maintainability](https://api.codeclimate.com/v1/badges/790916641cb9f64e9d60/maintainability)](https://codeclimate.com/github/lukemnet/starcraft2-api-example/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/790916641cb9f64e9d60/test_coverage)](https://codeclimate.com/github/lukemnet/starcraft2-api-example/test_coverage)
 
