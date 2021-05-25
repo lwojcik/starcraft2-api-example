@@ -52,3 +52,5 @@ __TESTDATA__
 
 # Build
 dist/
+
+package-lock.json

@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const StarCraft2API = require("starcraft2-api");
+const { StarCraft2API } = require("starcraft2-api");
 
 const clientId = process.env.API_BATTLENET_KEY;
 const clientSecret = process.env.API_BATTLENET_SECRET;

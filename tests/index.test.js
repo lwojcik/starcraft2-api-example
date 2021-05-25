@@ -11,53 +11,56 @@ const queueId = '201';
 const teamType = '0';
 const leagueId = '6';
 
-jest.mock('starcraft2-api', () => jest.fn().mockImplementation(() => ({
-  queryStaticProfileData: () => Promise.resolve({
-    data: 'sample data for queryStaticProfileData',
-  }),
-  queryProfileMetadata: () => Promise.resolve({
-    data: 'sample data for queryProfileMetadata',
-  }),
-  queryProfile: () => Promise.resolve({
-    data: 'sample data for queryProfile',
-  }),
-  queryLadderSummary: () => Promise.resolve({
-    data: 'sample data for queryLadderSummary',
-  }),
-  queryPlayerLadder: () => Promise.resolve({
-    data: 'sample data for queryPlayerLadder',
-  }),
-  queryGrandmasterLeaderboard: () => Promise.resolve({
-    data: 'sample data for queryGrandmasterLeaderboard',
-  }),
-  querySeason: () => Promise.resolve({
-    data: 'sample data for querySeason',
-  }),
-  queryPlayerAccount: () => Promise.resolve({
-    data: 'sample data for queryPlayerAccount',
-  }),
-  queryLegacyProfile: () => Promise.resolve({
-    data: 'sample data for queryLegacyProfile',
-  }),
-  queryLegacyLadders: () => Promise.resolve({
-    data: 'sample data for queryLegacyLadders',
-  }),
-  queryLegacyMatchHistory: () => Promise.resolve({
-    data: 'sample data for queryLegacyMatchHistory',
-  }),
-  queryLegacyLadder: () => Promise.resolve({
-    data: 'sample data for queryLegacyLadder',
-  }),
-  queryLegacyAchievements: () => Promise.resolve({
-    data: 'sample data for queryLegacyAchievements',
-  }),
-  queryLegacyRewards: () => Promise.resolve({
-    data: 'sample data for queryLegacyRewards',
-  }),
-  queryLeagueData: () => Promise.resolve({
-    data: 'sample data for queryLeagueData',
-  }),
-})));
+jest.mock('starcraft2-api', () => ({
+  StarCraft2API: jest.fn().mockImplementation(() => ({
+    queryStaticProfileData: () => Promise.resolve({
+      data: 'sample data for queryStaticProfileData',
+    }),
+    queryProfileMetadata: () => Promise.resolve({
+      data: 'sample data for queryProfileMetadata',
+    }),
+    queryProfile: () => Promise.resolve({
+      data: 'sample data for queryProfile',
+    }),
+    queryLadderSummary: () => Promise.resolve({
+      data: 'sample data for queryLadderSummary',
+    }),
+    queryPlayerLadder: () => Promise.resolve({
+      data: 'sample data for queryPlayerLadder',
+    }),
+    queryGrandmasterLeaderboard: () => Promise.resolve({
+      data: 'sample data for queryGrandmasterLeaderboard',
+    }),
+    querySeason: () => Promise.resolve({
+      data: 'sample data for querySeason',
+    }),
+    queryPlayerAccount: () => Promise.resolve({
+      data: 'sample data for queryPlayerAccount',
+    }),
+    queryLegacyProfile: () => Promise.resolve({
+      data: 'sample data for queryLegacyProfile',
+    }),
+    queryLegacyLadders: () => Promise.resolve({
+      data: 'sample data for queryLegacyLadders',
+    }),
+    queryLegacyMatchHistory: () => Promise.resolve({
+      data: 'sample data for queryLegacyMatchHistory',
+    }),
+    queryLegacyLadder: () => Promise.resolve({
+      data: 'sample data for queryLegacyLadder',
+    }),
+    queryLegacyAchievements: () => Promise.resolve({
+      data: 'sample data for queryLegacyAchievements',
+    }),
+    queryLegacyRewards: () => Promise.resolve({
+      data: 'sample data for queryLegacyRewards',
+    }),
+    queryLeagueData: () => Promise.resolve({
+      data: 'sample data for queryLeagueData',
+    }),
+  })),
+}));
+
 
 const routes = [
   '/',
