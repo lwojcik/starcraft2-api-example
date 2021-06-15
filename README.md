@@ -1,11 +1,11 @@
-<img src="https://raw.githubusercontent.com/lukemnet/starcraft2-api-docs/master/docs/.vuepress/public/logo.png" alt="StarCraft2-API logo" width="200" height="200">
+<img src="https://raw.githubusercontent.com/blizzapi/starcraft2-api-docs/master/docs/.vuepress/public/logo.png" alt="StarCraft2-API logo" width="200" height="200">
 
 # starcraft2-api-example
 [![Build status](https://ci.appveyor.com/api/projects/status/x77wvgrihhssl2o6/branch/master?svg=true)](https://ci.appveyor.com/project/lwojcik/starcraft2-api-example/branch/master)
-[![codecov](https://codecov.io/gh/lukemnet/starcraft2-api-example/branch/master/graph/badge.svg?token=xaTUC9pzqN)](https://codecov.io/gh/lukemnet/starcraft2-api-example)
+[![codecov](https://codecov.io/gh/blizzapi/starcraft2-api-example/branch/master/graph/badge.svg?token=xaTUC9pzqN)](https://codecov.io/gh/blizzapi/starcraft2-api-example)
 
 
-Sample REST API based on Express.js demonstrating [StarCraft2-API](https://github.com/lukemnet/starcraft2-api) features.
+Sample REST API based on Express.js demonstrating [StarCraft2-API](https://github.com/blizzapi/starcraft2-api) features.
 
 Note that this project is for illustrative purposes only. It is not designed to run as a production server.
 
@@ -14,7 +14,7 @@ Note that this project is for illustrative purposes only. It is not designed to 
 ## Install
 
 ```bash
-git clone https://github.com/lukemnet/starcraft2-api-example.git
+git clone https://github.com/blizzapi/starcraft2-api-example.git
 cd starcraft2-api-example
 npm install
 ```
@@ -109,7 +109,7 @@ Returns data for the specified season, queue, team, and league.
 
 ## License
 
-Licensed under MIT License. See [LICENSE](https://github.com/lukemnet/starcraft2-api-example/blob/master/LICENSE) for more information.
+Licensed under MIT License. See [LICENSE](https://github.com/blizzapi/starcraft2-api-example/blob/master/LICENSE) for more information.
 
 ## Legal
 

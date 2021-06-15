@@ -2,7 +2,7 @@
   "name": "starcraft2-api-example",
   "description": "Sample REST API based on Express.js demonstrating StarCraft2-API features",
   "website": "https://starcraft2-api.lukem.net/",
-  "repository": "https://github.com/lukemnet/starcraft2-api",
+  "repository": "https://github.com/blizzapi/starcraft2-api",
   "success_url": "/",
   "image": "heroku/nodejs",
   "env": {
